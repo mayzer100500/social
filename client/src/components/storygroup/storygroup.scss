@@ -1,0 +1,45 @@
+.story-groups {
+    position: relative;
+    display: flex;
+    flex: 1;
+    // gap: 10px;
+    height: 100%;
+    .story {
+        flex: 1;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        gap: 10px;
+        width: 100%;
+        img, video {
+            width: 100%;
+        }
+        }
+    .controls button {
+        border: none;
+        height: 45px;
+        // width: 45px;  
+        color: dodgerblue;
+        font-size: 35px;
+        top: 50%;
+        transform:translate(0%, -50%);
+        cursor: pointer;
+
+        &:hover {
+            background-color: transparent;        
+            font-weight: bold;
+        }
+
+        &:nth-child(1) {
+            position: absolute;
+            background-color: rgba(202, 225, 235, 0.5);
+            left: 0px;
+        }
+        &:nth-child(2) {
+            position: absolute;
+            background-color: rgba(202, 225, 235, 0.5);
+            right: 0px;
+
+        }
+    }
+}
